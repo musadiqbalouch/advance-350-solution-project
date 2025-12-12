@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@import url("https://db.onlinewebfonts.com/c/5265249bdc5bb8258d22778263bfbe29?family=Futura+PT+Book+Italic+W08+Rg");
+
+.italic-futura {
+  font-family: "Futura PT Book Italic W08 Rg";
+}
+
+body {
+  font-family: "Futura Std", sans-serif;
+}
+
+.normal-futura {
+  font-family: "LFutura";
+}
+@theme {
+  /* fonts */
+  --font-display: "Kumbh Sans", "sans-serif";
+
+  /* breakpoints */
+  --breakpoint-s_phone: 319px;
+  --breakpoint-m_phone: 374px;
+  --breakpoint-phone: 424px;
+  --breakpoint-tablet: 767px;
+  --breakpoint-laptop-sm: 900px;
+  --breakpoint-laptop: 1023px;
+  --breakpoint-laptop-lg: 1366px;
+  --breakpoint-desktop: 1439px;
+  --breakpoint-_4k: 1920px;
+}
+/* webkit-scrollbar {
+  display: none;
+} */
+::-webkit-scrollbar {
+  display: none;
+}
