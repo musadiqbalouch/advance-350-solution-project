@@ -18,9 +18,9 @@ const HomPage = () => {
       <AboutCompany />
       <OurService />
       <AdvanceSolution />
-      {/* <TrustedPartners />
+      <TrustedPartners />
       <ContactUs />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 };

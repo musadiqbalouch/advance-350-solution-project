@@ -4,7 +4,7 @@ import advancesolutionimage from "../../../assets/advancesolutionimage.png";
 
 const AdvanceSolution = () => {
   return (
-    <div className=" w-full  flex  items-center justify-center p-10  s_phone:flex-col s_phone:p3 s_phone:gap-5  tablet:flex-row ">
+    <div className=" w-full m-auto  flex  items-center justify-center p-10  s_phone:flex-col s_phone:p3 s_phone:gap-5  tablet:flex-row ">
       <div className=" tablet:w-[40%] ">
         <p className=" font-bold text-[#0096E8]  s_phone:text-xl  laptop-sm:text-2xl laptop:text-3xl   laptop-lg:text-4xl">
           Advanced solutions for advanced problems.{" "}
