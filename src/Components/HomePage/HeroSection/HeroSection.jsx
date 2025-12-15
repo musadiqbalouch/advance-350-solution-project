@@ -5,8 +5,11 @@ import HeroSectionimgae from "../../../assets/HeroSection.png";
 const HeroSection = () => {
   // s_phone;
   return (
-    <div className="flex  items-center mt-20 w-full container m-auto s_phone:flex-col s_phone:px-3 tablet:flex-row tablet:relative tablet:px-10 laptop-sm:p-0 ">
-      <div className=" flex flex-col    s_phone:w-full tablet:absolute  laptop:left-12  laptop:w-[40%]   ">
+    <div
+      className="flex  items-center mt-20 w-full container m-auto s_phone:flex-col s_phone:px-3 tablet:flex-row 
+     tablet:relative tablet:px8 laptop-sm:p-0 tablet:px-10 "
+    >
+      <div className=" flex flex-col s_phone:w-full tablet:absolute tablet:w-[40%]  laptop:left-12  laptop:w-[40%]   ">
         <h3 className="text-[#1B1C67] s_phone:text-sm laptop:text-base    ">
           Driving Results for Commercial and Federal Success
         </h3>
@@ -30,7 +33,7 @@ const HeroSection = () => {
           text={"Explore Now"}
         />
       </div>
-      <div className=" w-full   flex  tablet:justify-end  s_phone:h-60 m_phone:h-70 tablet:h-80 tablet:mt-8  laptop:h-90 laptop:mt-20 laptop-lg:h-125 laptop-lg:mt-8  ">
+      <div className=" w-full   flex  tablet:justify-end  s_phone:h-60 m_phone:h-70 tablet:h-70 tablet:mt-8  laptop:h-90 laptop:mt-20 laptop-lg:h-125 laptop-lg:mt-8  ">
         <img className="object-cover     " src={HeroSectionimgae} alt="" />
       </div>
     </div>

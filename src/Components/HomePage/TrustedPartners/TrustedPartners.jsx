@@ -2,7 +2,7 @@ import React from "react";
 import { TrustedPartnersLogo } from "../../Constants/Data";
 const TrustedPartners = () => {
   return (
-    <div className="flex flex-col items-center justify-center p-20 gap-10  s_phone:p-2 ">
+    <div className="flex flex-col items-center justify-center p-20 gap-10  s_phone:p-2 tablet:py-10 ">
       <h2 className="text-4xl font-bold text-[#1B1C67]  s_phone:text-base tablet:text-xl  laptop:text-3xl  ">
         Our Trusted Partners
       </h2>

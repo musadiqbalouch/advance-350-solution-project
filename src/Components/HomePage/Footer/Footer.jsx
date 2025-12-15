@@ -39,7 +39,7 @@ const Footer = () => {
 
         <div className=" tablet:w-[60%] ">
           <div
-            className=" text-lg   font-normal flex   justify-between px2  s_phone:flex-col  s_phone:gap-5 
+            className=" text-lg   font-normal flex   justify-between px2  s_phone:flex-col s_phone:py-5  s_phone:gap-5 
            tablet:flex-row   "
           >
             {foorterContent1.map((footer, index) => (

@@ -8,12 +8,12 @@ import Form from "./Form";
 
 const ContactUs = () => {
   return (
-    <div className=" flex items-center justify-center s_phone:p-4    w-full  ">
+    <div className=" flex items-center justify-center s_phone:p-4 tablet:px-10    w-full  ">
       <div
         className="bg-linear-[360deg]  flex  items-center justify-center rounded-2xl  container m-auto gap 10  p6  from-[#1B1C67] 
        to-[#0096E8] to-[188.17%] text-white s_phone:flex-col s_phone:p-3 tablet:flex-row tablet:gap-10  laptop:px-10 "
       >
-        <div className=" w-fit laptop-sm:w-[40%]  p-2 ">
+        <div className="  tablet:w-[40%] laptop-sm:w-[40%]  p-2 ">
           <h3 className=" s_phone:text-sm   laptop:text-base">
             We’re Here to Help You Share Your Story
           </h3>

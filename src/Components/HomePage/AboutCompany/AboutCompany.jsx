@@ -6,10 +6,10 @@ import { AboutOurCompany } from "../../Constants/Data";
 
 const AboutCompany = () => {
   return (
-    <div className="flex items-center justify-center  gap-5  s_phone:flex-col s_phone:px-3 tablet:flex-row  tablet:p-10 laptop:gap-15 ">
+    <div className="flex items-center justify-center  gap-5  s_phone:flex-col s_phone:px-3 tablet:flex-row  tablet:p-10  laptop:gap-15 ">
       <div>
         <img
-          className="object-cover h170 w170  s_phone:h-60  s_phone:w-60 tablet:h-80 tablet:w-80 laptop:h-120 laptop:w-110 laptop-lg:h-170 laptop-lg:w-170  "
+          className="object-cover h170 w170  s_phone:h-60  s_phone:w-60 tablet:h-80 tablet:w-80 laptop-sm:h-100 laptop-sm:w-100  laptop:h-120 laptop:w-110 laptop-lg:h-170 laptop-lg:w-170  "
           src={AboutCompanyimage}
           alt=""
         />
