@@ -1,6 +1,7 @@
 import React from "react";
 import image from "../../../assets/SuccessSectionlogo1.png";
 
+// import { SuccessRate } from "../../Constants/Data";
 import { SuccessRate } from "../../Constants/Data";
 
 const SuccessNumbers = () => {

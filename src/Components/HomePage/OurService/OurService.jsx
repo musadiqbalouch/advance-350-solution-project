@@ -2,6 +2,7 @@ import React from "react";
 import OurServiceBackgroundImage from "../../../assets/OurServiceBackgroundImage.png";
 import TRANSFORMATIONACCELERATOR from "../../../assets/TRANSFORMATIONACCELERATOR.png";
 import CommanButton from "../../Comman/CommanButton";
+// import { ServiceCard } from "../../Constants/Data";
 import { ServiceCard } from "../../Constants/Data";
 
 const OurService = () => {

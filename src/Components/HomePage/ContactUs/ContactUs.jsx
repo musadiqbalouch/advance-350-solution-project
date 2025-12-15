@@ -1,4 +1,5 @@
 import React from "react";
+// import { Informations } from "../../Constants/Data";
 import { Informations } from "../../Constants/Data";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
