@@ -2,7 +2,7 @@ import React from "react";
 import image from "../../../assets/SuccessSectionlogo1.png";
 
 // import { SuccessRate } from "../../Constants/Data";
-import { SuccessRate } from "../../Constants/Data";
+import { SuccessRate } from "../../Constants/dataa";
 
 const SuccessNumbers = () => {
   // laptop - sm;

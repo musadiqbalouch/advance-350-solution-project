@@ -2,7 +2,7 @@ import React from "react";
 import advanceSolutionLogo from "../../../assets/advance-360-solotions-logo.png";
 import Input from "../../Comman/Input";
 import CommanButton from "../../Comman/CommanButton";
-import { foorterContent1 } from "../../Constants/Data";
+import { foorterContent1 } from "../../Constants/dataa";
 
 const Footer = () => {
   return (

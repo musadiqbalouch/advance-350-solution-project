@@ -1,6 +1,6 @@
 import React from "react";
 // import { TrustedPartnersLogo } from "../../Constants/Data";
-import { TrustedPartnersLogo } from "../../Constants/Data";
+import { TrustedPartnersLogo } from "../../Constants/dataa";
 const TrustedPartners = () => {
   return (
     <div className="flex flex-col items-center justify-center p-20 gap-10  s_phone:p-2 tablet:py-10 ">

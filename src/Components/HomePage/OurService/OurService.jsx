@@ -1,7 +1,7 @@
 import React from "react";
 import OurServiceBackgroundImage from "../../../assets/OurServiceBackgroundImage.png";
 import TRANSFORMATIONACCELERATOR from "../../../assets/TRANSFORMATIONACCELERATOR.png";
-import { ServiceCard } from "../../Constants/Data";
+import { ServiceCard } from "../../Constants/dataa";
 
 const OurService = () => {
   return (

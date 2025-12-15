@@ -3,7 +3,7 @@ import AboutCompanyimage from "../../../assets/AboutCompany.png";
 import { FaGripLines } from "react-icons/fa";
 import CommanButton from "../../Comman/CommanButton";
 // import { AboutOurCompany } from "../../Constants/Data";
-import { AboutOurCompany } from "../../Constants/Data";
+import { AboutOurCompany } from "../../Constants/dataa";
 
 const AboutCompany = () => {
   return (
