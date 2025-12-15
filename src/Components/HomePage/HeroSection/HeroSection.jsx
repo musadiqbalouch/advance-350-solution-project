@@ -34,7 +34,7 @@ const HeroSection = () => {
         />
       </div>
       <div className=" w-full   flex  tablet:justify-end  s_phone:h-60 m_phone:h-70 tablet:h-70 tablet:mt-8  laptop:h-90 laptop:mt-20 laptop-lg:h-125 laptop-lg:mt-8  ">
-        <img className="object-cover     " src={HeroSectionimgae} alt="" />
+        <img className="object-cover " src={HeroSectionimgae} alt="" />
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ import { ServiceCard } from "../../Constants/dataa";
 const OurService = () => {
   return (
     <div
-      className="flex flex-col p-10 items-center justify-center"
+      className="flex flex-col p-10 items-center justify-center "
       style={{
         backgroundImage: `url(${OurServiceBackgroundImage})`, // This is correct React syntax
         backgroundRepeat: "no-repeat",
@@ -24,7 +24,7 @@ const OurService = () => {
           scrambled it to make a type specimen book.
         </p>
       </div>
-      <div className="flex  gap-3  items-center  justifycenter text-center rounded-3xl py-4 mt-5 overflow-auto w-full   ">
+      <div className="flex container m-auto  gap-3  items-center  justifycenter text-center rounded-3xl py-4 mt-5 overflow-auto w-full   ">
         <div className=" flex gap-5 shrink-0   ">
           {ServiceCard.map((service, index) => (
             <div

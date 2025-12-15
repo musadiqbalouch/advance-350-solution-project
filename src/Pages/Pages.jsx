@@ -2,7 +2,7 @@ import HomPage from "../Components/HomePage/HomePage";
 
 const Pages = () => {
   return (
-    <div className=" w-full ">
+    <div className=" w-full  ">
       <HomPage />
     </div>
   );

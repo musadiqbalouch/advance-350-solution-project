@@ -6,10 +6,10 @@ import { foorterContent1 } from "../../Constants/dataa";
 
 const Footer = () => {
   return (
-    <div className="w-full  ">
+    <div className="w-full   ">
       <div
-        className="w-full flex items-center justify-center   gap-20 mt-10 s_phone:flex-col s_phone:px-5 
-       tablet:flex-row  laptop:py-8 laptop:px-15"
+        className="w-full  container m-auto  flex items-center justify-center   gap-20 mt-10 s_phone:flex-col s_phone:px-5 
+       tablet:flex-row  laptop:py-8 laptop:px-15 laptop-lg:px-0"
       >
         <div className=" tablet:w-[40%] laptop:w-[30%]  ">
           <img
