@@ -35,8 +35,11 @@ const AboutCompany = () => {
           }
           text={"Read More"}
         />
-        {AboutOurCompany.map((about) => (
-          <div className="flex s_phone:w-70     items-start gap-2 my-2 phone:w-90 tablet:my-0  ">
+        {AboutOurCompany.map((about, index) => (
+          <div
+            key={index}
+            className="flex s_phone:w-70     items-start gap-2 my-2 phone:w-90 tablet:my-0  "
+          >
             <h3 className=" text-xl text-[#1B1C67]">{about.checked}</h3>
             <p className=" ws90 text-xs   laptop:text-sm ">
               {about.description}

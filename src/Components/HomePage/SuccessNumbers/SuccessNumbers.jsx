@@ -22,8 +22,11 @@ const SuccessNumbers = () => {
           className=" items-center justify-between gap5 mt-2 s_phone:flex  s_phone:flex-col s_phone:gap-10 tablet:flex-row
          tablet:flex-wrap  tablet:justify-around laptop-sm:flex-nowrap laptop-sm:gap-1   laptop:gap-8  laptop:px-10   "
         >
-          {SuccessRate.map((success) => (
-            <div className=" flex flex-col items-center  laptop:gap-2    laptop-sm:mt-2 laptop-sm:w-47  laptop:p-1   ">
+          {SuccessRate.map((success, index) => (
+            <div
+              key={index}
+              className=" flex flex-col items-center  laptop:gap-2    laptop-sm:mt-2 laptop-sm:w-47  laptop:p-1   "
+            >
               <img
                 className="h-10 w-10 object-cover s_phone:h-8 s_phone:w-8 laptop-sm:h-8 laptop-sm:w-8  laptop:h-10 laptop:w-10"
                 src={success.image}

@@ -2,10 +2,7 @@ import React from "react";
 import advanceSolutionLogo from "../../../assets/advance-360-solotions-logo.png";
 import Input from "../../Comman/Input";
 import CommanButton from "../../Comman/CommanButton";
-// import { foorterContent1 } from "../../Constants/Data";
 import { foorterContent1 } from "../../Constants/Data";
-
-// import { foorterContent2 } from "../../Constants/Data";
 
 const Footer = () => {
   return (
@@ -51,8 +48,11 @@ const Footer = () => {
                 <h2 className="text-[#1B1C67] tablet:text-base laptop:text-lg">
                   {footer.title}
                 </h2>
-                {footer.array.map((txt) => (
-                  <h4 className="flex gap-2 items-center text-sm  w50 tablet:text-xs laptop:text-sm ">
+                {footer.array.map((txt, index) => (
+                  <h4
+                    key={index}
+                    className="flex gap-2 items-center text-sm  w50 tablet:text-xs laptop:text-sm "
+                  >
                     {txt.logo}
                     {txt.text}
                   </h4>

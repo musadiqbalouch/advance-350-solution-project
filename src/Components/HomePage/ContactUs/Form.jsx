@@ -32,7 +32,7 @@ const Form = () => {
           type="textarea"
           placeholder="Your Message "
         ></Input>
-        <span
+        {/* <span
           className="flex items-center text-base  gap-2  justify-center text-white rounded-lg 
           s_phone:h-10 s_phone:text-xs bg-[#1B1C67]  laptop:text-base   laptop:h-15  laptop:w-55"
         >
@@ -41,7 +41,7 @@ const Form = () => {
             text={"Send message"}
             className={" text-white font-bold   "}
           />
-        </span>
+        </span> */}
       </form>
     </div>
   );
