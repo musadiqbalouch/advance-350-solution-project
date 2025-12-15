@@ -52,8 +52,8 @@ const Navbar = () => {
         </div>
       </nav>
       <div className="bg-[#FEFEFE]  ">
-        <div className=" w-full text-xl flex items-center justify-between px-1  tablet:hidden">
-          <GiHamburgerMenu onClick={toggleMenu} className=" text-xl  " />
+        <div className=" w-full text-xl flex items-center justify-between px-2  tablet:hidden">
+          <GiHamburgerMenu onClick={toggleMenu} className=" text-2xl  " />
           <img className="h-10 object-cover" src={AdvanceSolutionLogo} alt="" />
         </div>
         {menuOpen && (
