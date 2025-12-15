@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import CommanButton from "../../Comman/CommanButton";
 import AdvanceSolutionLogo from "../../../assets/advance-360-solotions-logo.png";
-import { links } from "../../Constants/Data";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
