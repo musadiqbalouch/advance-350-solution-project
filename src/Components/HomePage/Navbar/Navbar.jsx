@@ -6,10 +6,12 @@ import { links } from "../../Constants/dataa";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  console.log("🚀 ~ Navbar ~ menuOpen:", menuOpen);
+  const [drop, setDrop] = useState(null);
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+  console.log(links);
 
   return (
     <div className="w-full  fixed top-0 z-10 ">
@@ -31,24 +33,34 @@ const Navbar = () => {
         laptop-lg:gap-10  "
         >
           {links.map((link, index) => (
-            <a
-              key={index}
-              className="flex  text-sm   items-center justify-center  tablet:text-xs laptop:text-sm "
-            >
-              {link.title}
-              <span className="text-3xl ">{link.dropdown}</span>
-            </a>
+            <div className="flex flex-col h-5 bg-amber-200 ">
+              <a
+                onMouseEnter={() => setDrop(index)}
+                onMouseLeave={() => setDrop(null)}
+                href={link.ref}
+                key={index}
+                className="flex group  text-sm   items-center justify-center  tablet:text-xs laptop:text-sm "
+              >
+                {link.title} <span className="text-3xl ">{link.dropdown}</span>
+              </a>
+              <a href="">
+                {drop && (
+                  <div className="flex flex-col  bg-amber-500">
+                    {link?.items?.map((item) => (
+                      <a className={`${drop === index ? "flex" : "hidden"}`}>
+                        {item?.item1}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </a>
+            </div>
           ))}
         </div>
         {/* navbar when screen size is on smaller then table  */}
 
-        <div className="  s_phone:hidden tablet:block">
-          <CommanButton
-            className={
-              "bg-[#1B1C67] text-white px-3 py-1  font-bold rounded-md border tablet:text-xs laptop:text-sm "
-            }
-            text={"Contact Us"}
-          />
+        <div className="s_phone:hidden tablet:block">
+          <CommanButton text={"Contact Us"} />
         </div>
       </nav>
       <div className="bg-[#FEFEFE]  ">

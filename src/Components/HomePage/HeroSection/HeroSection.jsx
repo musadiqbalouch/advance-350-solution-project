@@ -6,7 +6,8 @@ const HeroSection = () => {
   // s_phone;
   return (
     <div
-      className="flex  items-center mt-20 w-full container m-auto s_phone:flex-col s_phone:px-3 tablet:flex-row 
+      id="home"
+      className=" flex  items-center mt-20 w-full container m-auto s_phone:flex-col s_phone:px-3 tablet:flex-row 
      tablet:relative tablet:px8 laptop-sm:p-0 tablet:px-10 "
     >
       <div className=" flex flex-col s_phone:w-full tablet:absolute tablet:w-[40%]  laptop:left-12  laptop:w-[40%]   ">
@@ -26,12 +27,7 @@ const HeroSection = () => {
           operational excellence, improve compliance, and drive sustainable
           growth
         </p>
-        <CommanButton
-          className={
-            "bg-[#1B1C67] text-white px-4   py-2 text-base font-semibold rounded-md  s_phone:px-2 s_phone:text-xs  s_phone:py-1  laptop:px-4 laptop:py-2 laptop:text-sm "
-          }
-          text={"Explore Now"}
-        />
+        <CommanButton text={"Explore Now"} />
       </div>
       <div className=" w-full   flex  tablet:justify-end  s_phone:h-60 m_phone:h-70 tablet:h-70 tablet:mt-8  laptop:h-90 laptop:mt-20 laptop-lg:h-125 laptop-lg:mt-8  ">
         <img className="object-cover " src={HeroSectionimgae} alt="" />

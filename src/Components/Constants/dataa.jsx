@@ -1,24 +1,44 @@
 import { RiArrowDropDownLine } from "react-icons/ri";
+import Pages from "../../Pages/Pages";
+import OurService from "../HomePage/OurService/OurService";
+import AdvanceSolution from "../HomePage/AdvanceSolution/AdvanceSolution";
+import SuccessNumbers from "../HomePage/SuccessNumbers/SuccessNumbers";
+import AboutCompany from "../HomePage/AboutCompany/AboutCompany";
 
 // navbar section data
 export const links = [
   {
-    title: "Home",
+    title: "home",
+    ref: "#home",
   },
   {
     title: "Services",
+    ref: "#service",
     dropdown: <RiArrowDropDownLine />,
+    items: [
+      {
+        item1: "link1",
+      },
+    ],
   },
   {
     title: "Government",
+    ref: "#contactus",
     dropdown: <RiArrowDropDownLine />,
+    items: [
+      {
+        item1: "link1",
+      },
+    ],
   },
   {
     title: "Case Studies",
+    ref: "#advancesolution",
     dropdown: <RiArrowDropDownLine />,
   },
   {
     title: "About A360",
+    ref: "#about",
     dropdown: <RiArrowDropDownLine />,
   },
 ];
@@ -83,74 +103,32 @@ export const ServiceCard = [
   {
     image: DIGITALTRANSFORMATION,
     title: "DIGITAL TRANSFORMATION",
-    btn: (
-      <CommanButton
-        text={"Read More"}
-        className={
-          "bg-[#0096E8] text-white font-semibold px-10 rounded-lg py-2"
-        }
-      />
-    ),
+    btn: <CommanButton text={"Read More"} className={"bg-[#0096E8] px-10!"} />,
   },
   {
     image: STRATEGICPLANNING,
     title: "STRATEGIC PLANNING",
-    btn: (
-      <CommanButton
-        text={"Read More"}
-        className={
-          "bg-[#0096E8] text-white font-semibold px-10 rounded-lg py-2  s_phone:text-sm"
-        }
-      />
-    ),
+    btn: <CommanButton text={"Read More"} className={"bg-[#0096E8] px-10!"} />,
   },
   {
     image: TECHFINANCIALMODELING,
     title: "TECH FINANCIAL MODELING",
-    btn: (
-      <CommanButton
-        text={"Read More"}
-        className={
-          "bg-[#0096E8] text-white font-semibold px-10 rounded-lg py-2"
-        }
-      />
-    ),
+    btn: <CommanButton text={"Read More"} className={"bg-[#0096E8] px-10!"} />,
   },
   {
     image: VENDORMANAGEMENT,
     title: "VENDOR MANAGEMENT",
-    btn: (
-      <CommanButton
-        text={"Read More"}
-        className={
-          "bg-[#0096E8] text-white font-semibold px-10 rounded-lg py-2"
-        }
-      />
-    ),
+    btn: <CommanButton text={"Read More"} className={"bg-[#0096E8] px-10!"} />,
   },
   {
     image: TRANSFORMATIONACCELERATOR,
     title: "TRANSFORMATION ACCELERATOR",
-    btn: (
-      <CommanButton
-        text={"Read More"}
-        className={
-          "bg-[#0096E8] text-white font-semibold px-10 rounded-lg py-2"
-        }
-      />
-    ),
+    btn: <CommanButton text={"Read More"} className={"bg-[#0096E8] px-10!"} />,
   },
   {
     image: TRANSFORMATIONACCELERATOR,
     title: "GOVERMENT SERVICES",
-    btn: (
-      <CommanButton
-        text={"Read More"}
-        className={
-          "bg-[#0096E8] text-white font-semibold px-10 rounded-lg py-2"
-        }
-      />
-    ),
+    btn: <CommanButton text={"Read More"} className={"bg-[#0096E8] px-10!"} />,
   },
 ];
 
@@ -255,3 +233,5 @@ export const foorterContent1 = [
     ],
   },
 ];
+
+// Routes for Navar

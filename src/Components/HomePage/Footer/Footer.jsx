@@ -23,16 +23,9 @@ const Footer = () => {
           <Input
             type={"email"}
             placeholder={"Enter Your Email"}
-            className={
-              "outline-none border border-[#1B1C67] w-full rounded-md py-1 px-1 s_phone:placeholder:text-sm"
-            }
+            className={"  border pl-2 w-full rounded-sm "}
           />
-          <CommanButton
-            text={"Let’s Do It"}
-            className={
-              "bg-[#1B1C67] text-white w-full my-4 py-2 text-base font-bold rounded-md  s_phone:text-sm "
-            }
-          />
+          <CommanButton text={"Let’s Do It"} className={"w-full my-2 "} />
         </div>
 
         <div className=" tablet:w-[60%] ">

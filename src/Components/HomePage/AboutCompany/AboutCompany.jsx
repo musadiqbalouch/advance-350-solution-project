@@ -2,12 +2,14 @@ import React from "react";
 import AboutCompanyimage from "../../../assets/AboutCompany.png";
 import { FaGripLines } from "react-icons/fa";
 import CommanButton from "../../Comman/CommanButton";
-// import { AboutOurCompany } from "../../Constants/Data";
 import { AboutOurCompany } from "../../Constants/dataa";
 
 const AboutCompany = () => {
   return (
-    <div className="flex items-center justify-center  gap-5  s_phone:flex-col s_phone:px-3 tablet:flex-row  tablet:p-10  laptop:gap-15 ">
+    <div
+      id="about"
+      className="flex items-center justify-center  gap-5  s_phone:flex-col s_phone:px-3 tablet:flex-row  tablet:p-10  laptop:gap-15 "
+    >
       <div>
         <img
           className="object-cover h170 w170  s_phone:h-60  s_phone:w-60 tablet:h-80 tablet:w-80 laptop-sm:h-100 laptop-sm:w-100  laptop:h-120 laptop:w-110 laptop-lg:h-170 laptop-lg:w-170  "
@@ -29,12 +31,7 @@ const AboutCompany = () => {
           deploy timely solutions, and elevate your business to the next level.{" "}
           <br />{" "}
         </p>
-        <CommanButton
-          className={
-            "bg-[#1B1C67] mb-2 text-white   font-semibold rounded-md  s_phone:text-sm  s_phone:px-4 laptop:px-6 laptop-lg:px-7  laptop-lg:py-1  laptop-lg:text-lg "
-          }
-          text={"Read More"}
-        />
+        <CommanButton text={"Read More"} className={"px-10! py-2! "} />
         {AboutOurCompany.map((about, index) => (
           <div
             key={index}

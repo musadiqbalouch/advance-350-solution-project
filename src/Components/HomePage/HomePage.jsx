@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Navbar from "./Navbar/Navbar";
 import HeroSection from "./HeroSection/HeroSection";
 import SuccessNumbers from "./SuccessNumbers/SuccessNumbers";

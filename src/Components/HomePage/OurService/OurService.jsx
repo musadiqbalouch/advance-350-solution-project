@@ -6,6 +6,7 @@ import { ServiceCard } from "../../Constants/dataa";
 const OurService = () => {
   return (
     <div
+      id="service"
       className="flex flex-col p-10 items-center justify-center "
       style={{
         backgroundImage: `url(${OurServiceBackgroundImage})`, // This is correct React syntax

@@ -8,7 +8,10 @@ import Form from "./Form";
 
 const ContactUs = () => {
   return (
-    <div className=" flex items-center justify-center s_phone:p-4 tablet:px-10    w-full  ">
+    <div
+      id="contactus"
+      className=" flex items-center justify-center s_phone:p-4 tablet:px-10    w-full  "
+    >
       <div
         className="bg-linear-[360deg]  flex  items-center justify-center rounded-2xl  container m-auto  from-[#1B1C67] 
        to-[#0096E8] to-[188.17%] text-white s_phone:flex-col s_phone:p-3 tablet:flex-row tablet:gap-10  laptop:px-10  "

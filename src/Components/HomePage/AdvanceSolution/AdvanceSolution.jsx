@@ -4,7 +4,10 @@ import advancesolutionimage from "../../../assets/advancesolutionimage.png";
 
 const AdvanceSolution = () => {
   return (
-    <div className=" w-full   flex  items-center justify-center p-10  s_phone:flex-col s_phone:p3 s_phone:gap-5 laptop-sm:px-8 laptop:px-15  tablet:flex-row container m-auto ">
+    <div
+      id="advancesolution"
+      className=" w-full   flex  items-center justify-center p-10  s_phone:flex-col s_phone:p3 s_phone:gap-5 laptop-sm:px-8 laptop:px-15  tablet:flex-row container m-auto "
+    >
       <div className=" tablet:w-[40%] ">
         <p className=" font-bold text-[#0096E8]  s_phone:text-xl  laptop-sm:text-2xl laptop:text-3xl   laptop-lg:text-4xl">
           Advanced solutions for advanced problems.{" "}
@@ -12,12 +15,7 @@ const AdvanceSolution = () => {
             Schedule a free consultation with Advanced360 Solutions today.
           </span>
         </p>
-        <CommanButton
-          text={"Contact us "}
-          className={
-            "bg-[#1B1C67] text-white px-8 my-4 py-2 text-base font-bold rounded-md  s_phone:text-sm"
-          }
-        />
+        <CommanButton text={"Contact us "} className={"px-7! my-2!"} />
       </div>
       <div className=" tablet:w-[60%] laptop-lg:w-[50%]">
         <img
