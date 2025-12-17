@@ -1,9 +1,5 @@
 import { RiArrowDropDownLine } from "react-icons/ri";
-import Pages from "../../Pages/Pages";
-import OurService from "../HomePage/OurService/OurService";
-import AdvanceSolution from "../HomePage/AdvanceSolution/AdvanceSolution";
-import SuccessNumbers from "../HomePage/SuccessNumbers/SuccessNumbers";
-import AboutCompany from "../HomePage/AboutCompany/AboutCompany";
+import { RiArrowDropUpLine } from "react-icons/ri";
 
 // navbar section data
 export const links = [
@@ -15,9 +11,16 @@ export const links = [
     title: "Services",
     ref: "#service",
     dropdown: <RiArrowDropDownLine />,
+    dropup: <RiArrowDropUpLine />,
     items: [
       {
-        item1: "link1",
+        item: "link1",
+      },
+      {
+        item: "link2",
+      },
+      {
+        item: "link3",
       },
     ],
   },
@@ -25,9 +28,16 @@ export const links = [
     title: "Government",
     ref: "#contactus",
     dropdown: <RiArrowDropDownLine />,
+    dropup: <RiArrowDropUpLine />,
     items: [
       {
-        item1: "link1",
+        item: "link1",
+      },
+      {
+        item: "link2",
+      },
+      {
+        item: "link3",
       },
     ],
   },
@@ -35,11 +45,35 @@ export const links = [
     title: "Case Studies",
     ref: "#advancesolution",
     dropdown: <RiArrowDropDownLine />,
+    dropup: <RiArrowDropUpLine />,
+    items: [
+      {
+        item: "link1",
+      },
+      {
+        item: "link2",
+      },
+      {
+        item: "link3",
+      },
+    ],
   },
   {
     title: "About A360",
     ref: "#about",
     dropdown: <RiArrowDropDownLine />,
+    dropup: <RiArrowDropUpLine />,
+    items: [
+      {
+        item: "link1",
+      },
+      {
+        item: "link2",
+      },
+      {
+        item: "link3",
+      },
+    ],
   },
 ];
 

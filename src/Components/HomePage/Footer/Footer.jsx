@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import advanceSolutionLogo from "../../../assets/advance-360-solotions-logo.png";
 import Input from "../../Comman/Input";
 import CommanButton from "../../Comman/CommanButton";
 import { foorterContent1 } from "../../Constants/dataa";
 
 const Footer = () => {
+  const [loading, setLoading] = useState(false);
+  const signUp = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      alert("email has been submitted");
+    }, 1000);
+  };
   return (
     <div className="w-full   ">
       <div
@@ -25,7 +33,12 @@ const Footer = () => {
             placeholder={"Enter Your Email"}
             className={"  border pl-2 w-full rounded-sm "}
           />
-          <CommanButton text={"Let’s Do It"} className={"w-full my-2 "} />
+          <CommanButton
+            onClick={signUp}
+            text={"Let’s Do It"}
+            className={"w-full my-2 "}
+            loading={loading}
+          />
         </div>
 
         <div className=" tablet:w-[60%] ">
@@ -42,13 +55,13 @@ const Footer = () => {
                   {footer.title}
                 </h2>
                 {footer.array.map((txt, index) => (
-                  <h4
+                  <a
                     key={index}
                     className="flex gap-2 items-center text-sm  w50 tablet:text-xs laptop:text-sm "
                   >
                     {txt.logo}
                     {txt.text}
-                  </h4>
+                  </a>
                 ))}
               </div>
             ))}
@@ -58,8 +71,11 @@ const Footer = () => {
       <div className="w-full text-center bg-amber-300">
         <p className="text-white text-base bg-[#1B1C67] py-3  s_phone:text-sm">
           Ⓒ All Rights Reserved 2024{" "}
-          <span className="font-bold">-Advance 360 Solutions</span>. Powered by
-          <span className="font-bold">Apex Web Studios</span>
+          <span className="font-semibold">-Advance 360 Solutions</span>. Powered
+          by
+          <a href="https://apexwebstudios.net/" className="font-bold ml-1">
+            Apex Web Studios
+          </a>
         </p>
       </div>
     </div>

@@ -11,6 +11,8 @@ const Input = ({
   required,
   min,
   max,
+  name,
+  onBlur,
 }) => {
   if (type === "textarea") {
     return (
@@ -25,6 +27,8 @@ const Input = ({
         required={required}
         min={min}
         max={max}
+        name={name}
+        onBlur={onBlur}
       />
     );
   }
@@ -41,6 +45,8 @@ const Input = ({
       required={required}
       min={min}
       max={max}
+      name={name}
+      onBlur={onBlur}
     />
   );
 };

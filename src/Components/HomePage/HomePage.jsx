@@ -12,7 +12,7 @@ import Footer from "./Footer/Footer";
 const HomPage = () => {
   return (
     <div className="w-full ">
-      <Navbar />
+      {/* <Navbar /> */}
       <HeroSection />
       <SuccessNumbers />
       <AboutCompany />
@@ -20,7 +20,7 @@ const HomPage = () => {
       <AdvanceSolution />
       <TrustedPartners />
       <ContactUs />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

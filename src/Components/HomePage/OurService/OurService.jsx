@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import OurServiceBackgroundImage from "../../../assets/OurServiceBackgroundImage.png";
 import TRANSFORMATIONACCELERATOR from "../../../assets/TRANSFORMATIONACCELERATOR.png";
 import { ServiceCard } from "../../Constants/dataa";
+import Modal from "../../Comman/Modal";
+import ServicesInformation from "./ServicesInformation";
 
 const OurService = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [title, setTitle] = useState("");
+
+  const handleModal = (item, index) => {
+    // console.log(service[index]);
+    setTitle(item.title);
+    // console.log(index);
+    setShowModal(true);
+  };
   return (
     <div
       id="service"
@@ -36,11 +47,16 @@ const OurService = () => {
               <h2 className="w-40  s_phone:text-xs  laptop:text-base">
                 {service.title}
               </h2>
-              <p>{service.btn}</p>
+              <p onClick={() => handleModal(service, index)}>{service.btn}</p>
             </div>
           ))}
         </div>
       </div>
+      {showModal && (
+        <Modal>
+          <ServicesInformation setShowModal={setShowModal} title={title} />
+        </Modal>
+      )}
     </div>
   );
 };
