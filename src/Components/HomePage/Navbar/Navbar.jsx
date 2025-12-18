@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import CommanButton from "../../Comman/CommanButton";
 import AdvanceSolutionLogo from "../../../assets/advance-360-solotions-logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
-
 import { links } from "../../Constants/dataa";
-import { href, Link } from "react-router-dom";
+import { href, Link, useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,6 +11,19 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const scroolBar = () => {
+    // document.getElementById()
+    console.log(location);
+
+    if (location.pathname === "/contact") {
+      navigate("/");
+    } else {
+      navigate("/");
+    }
   };
 
   return (
@@ -41,6 +53,7 @@ const Navbar = () => {
             >
               <a
                 href={link.ref}
+                onClick={scroolBar}
                 key={index}
                 className="flex   text-sm  tablet:h-5   items-center justify-center  tablet:text-xs laptop:text-sm "
               >
