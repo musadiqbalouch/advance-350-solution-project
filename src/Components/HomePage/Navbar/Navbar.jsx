@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import CommanButton from "../../Comman/CommanButton";
 import AdvanceSolutionLogo from "../../../assets/advance-360-solotions-logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { links } from "../../Constants/dataa";
+import { links } from "../../Constants/data";
 import { href, Link, useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
@@ -16,13 +16,14 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const scroolBar = () => {
-    // document.getElementById()
     console.log(location);
 
     if (location.pathname === "/contact") {
       navigate("/");
+      setMenuOpen(false);
     } else {
       navigate("/");
+      setMenuOpen(false);
     }
   };
 
@@ -47,6 +48,7 @@ const Navbar = () => {
         >
           {links.map((link, index) => (
             <div
+              key={link.id}
               className="flex flex-col h-5   "
               onMouseEnter={() => setDrop(index)}
               onMouseLeave={() => setDrop(null)}
@@ -67,7 +69,7 @@ const Navbar = () => {
                   className={`flex  flex-col  bg-[#FEFEFE]  rounded-lg items-center  cursor-pointer text-sm gap-1 p-1 ${drop === index ? "border   " : ""}`}
                 >
                   {link?.items?.map((item) => (
-                    <div className="">
+                    <div key={item.id} className="">
                       <a className={`${drop === index ? "flex " : "hidden"}`}>
                         {item?.item}
                       </a>
@@ -78,13 +80,12 @@ const Navbar = () => {
             </div>
           ))}
         </div>
-        {/* navbar when screen size is on smaller then table  */}
-
         <Link to={"/Contact"} className="s_phone:hidden tablet:block">
           <CommanButton text={"Contact Us"} />
         </Link>
       </nav>
-      <div className="bg-[#FEFEFE]  ">
+      {/* navbar when screen size is on smaller then table  */}
+      <div className="bg-[#FEFEFE] py-2 ">
         <div className=" w-full text-xl flex items-center justify-between px-3  tablet:hidden">
           <GiHamburgerMenu
             onClick={toggleMenu}
@@ -93,13 +94,50 @@ const Navbar = () => {
           <img className="h-10 object-cover" src={AdvanceSolutionLogo} alt="" />
         </div>
         {menuOpen && (
-          <div className=" ease-in-out duration-500   h-60 w-40 justify-around px-4 flex flex-col gaps2    tablet:hidden">
+          <div className=" ease-in-out duration-50 h-fit w-40 justify-around px-4 gap-2 flex flex-col tablet:hidden">
             {links.map((link, index) => (
-              <a href={link.ref} key={index} className="text-sm flex    ">
-                {link.title}
-                <span>{link.dropdown}</span>
-              </a>
+              <div key={link.id} className="">
+                <div className="flex items-center ">
+                  <a
+                    href={link.ref}
+                    onClick={scroolBar}
+                    key={index}
+                    className="text-sm flex "
+                  >
+                    {link.title}
+                  </a>
+                  <span
+                    className="text-xl "
+                    onClick={() =>
+                      drop === null ? setDrop(index) : setDrop(null)
+                    }
+                  >
+                    {drop === index ? link.dropup : link.dropdown}
+                  </span>
+                </div>
+                {link.items && (
+                  <div
+                    className={`flex  flex-col  bg-[#FEFEFE]  rounded-lg itemscenter  cursor-pointer text-sm  ${drop === index ? " border  s_phone:w-20  s_phone:gap-1  s_phone:px-1  s_phone:my-1 " : ""}`}
+                  >
+                    {link?.items?.map((item) => (
+                      <div key={item.id} className="">
+                        <a className={`${drop === index ? "flex " : "hidden"}`}>
+                          {item?.item}
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
+
+            <Link
+              to={"/Contact"}
+              onClick={() => setMenuOpen(false)}
+              className=""
+            >
+              <CommanButton text={"Contact Us"} />
+            </Link>
           </div>
         )}
       </div>

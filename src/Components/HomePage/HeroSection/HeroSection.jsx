@@ -1,14 +1,20 @@
 import React from "react";
 import CommanButton from "../../Comman/CommanButton";
 import HeroSectionimgae from "../../../assets/HeroSection.png";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+
+  const handlenavigate = () => {
+    navigate("/contact");
+  };
   // s_phone;
   return (
     <div
       id="home"
       className=" flex  items-center mt-20 w-full container m-auto s_phone:flex-col s_phone:px-3 tablet:flex-row 
-     tablet:relative tablet:px8 laptop-sm:p-0 tablet:px-10 "
+     tablet:relative  laptop-sm:p-0 tablet:px-10 "
     >
       <div className=" flex flex-col s_phone:w-full tablet:absolute tablet:w-[40%]  laptop:left-12  laptop:w-[40%]   ">
         <h3 className="text-[#1B1C67] s_phone:text-sm laptop:text-base    ">
@@ -27,7 +33,9 @@ const HeroSection = () => {
           operational excellence, improve compliance, and drive sustainable
           growth
         </p>
-        <CommanButton text={"Explore Now"} />
+        {/* <Link to={"/contact"}> */}
+        <CommanButton onClick={handlenavigate} text={"Explore Now"} />{" "}
+        {/* </Link> */}
       </div>
       <div className=" w-full   flex  tablet:justify-end  s_phone:h-60 m_phone:h-70 tablet:h-70 tablet:mt-8  laptop:h-90 laptop:mt-20 laptop-lg:h-125 laptop-lg:mt-8  ">
         <img className="object-cover " src={HeroSectionimgae} alt="" />

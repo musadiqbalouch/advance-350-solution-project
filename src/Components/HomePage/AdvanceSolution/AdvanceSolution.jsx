@@ -6,7 +6,8 @@ const AdvanceSolution = () => {
   return (
     <div
       id="advancesolution"
-      className=" w-full   flex  items-center justify-center p-10  s_phone:flex-col s_phone:p3 s_phone:gap-5 laptop-sm:px-8 laptop:px-15  tablet:flex-row container m-auto "
+      className=" w-full   flex  items-center justify-center  s_phone:p-3  s_phone:flex-col s_phone:p3 s_phone:gap-5
+       tablet:px-10  laptop-sm:px-4 laptop:px-15 laptop-lg:px-0  tablet:flex-row container m-auto "
     >
       <div className=" tablet:w-[40%] ">
         <p className=" font-bold text-[#0096E8]  s_phone:text-xl  laptop-sm:text-2xl laptop:text-3xl   laptop-lg:text-4xl">

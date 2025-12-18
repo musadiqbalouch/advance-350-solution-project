@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import OurServiceBackgroundImage from "../../../assets/OurServiceBackgroundImage.png";
 import TRANSFORMATIONACCELERATOR from "../../../assets/TRANSFORMATIONACCELERATOR.png";
-import { ServiceCard } from "../../Constants/dataa";
+import { ServiceCard } from "../../Constants/data";
 import Modal from "../../Comman/Modal";
 import ServicesInformation from "./ServicesInformation";
 
@@ -47,7 +47,9 @@ const OurService = () => {
               <h2 className="w-40  s_phone:text-xs  laptop:text-base">
                 {service.title}
               </h2>
-              <p onClick={() => handleModal(service, index)}>{service.btn}</p>
+              <div onClick={() => handleModal(service, index)}>
+                {service.btn}
+              </div>
             </div>
           ))}
         </div>

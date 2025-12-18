@@ -2,22 +2,26 @@ import React, { useState } from "react";
 import advanceSolutionLogo from "../../../assets/advance-360-solotions-logo.png";
 import Input from "../../Comman/Input";
 import CommanButton from "../../Comman/CommanButton";
-import { foorterContent1 } from "../../Constants/dataa";
+import { foorterContent1 } from "../../Constants/data";
 
 const Footer = () => {
   const [loading, setLoading] = useState(false);
+  const [email, setEmail] = useState("");
   const signUp = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      alert("email has been submitted");
+      alert(email, "email has been submitted");
+      console.log(email);
     }, 1000);
   };
+
+  const disabled = email === "";
   return (
-    <div className="w-full   ">
+    <div className="w-full">
       <div
         className="w-full  container m-auto  flex items-center justify-center   gap-20 mt-10 s_phone:flex-col s_phone:px-5 
-       tablet:flex-row  laptop:py-8 laptop:px-15 laptop-lg:px-0"
+      tablet:px-10   tablet:flex-row  laptop-sm:px-0 laptop:py-8 laptop:px-10 laptop-lg:px-5"
       >
         <div className=" tablet:w-[40%] laptop:w-[30%]  ">
           <img
@@ -32,11 +36,14 @@ const Footer = () => {
             type={"email"}
             placeholder={"Enter Your Email"}
             className={"  border pl-2 w-full rounded-sm "}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
           <CommanButton
+            disabled={disabled}
             onClick={signUp}
             text={"Let’s Do It"}
-            className={"w-full my-2 "}
+            className={` w-full my-2 ${disabled ? " opacity-90" : ""} `}
             loading={loading}
           />
         </div>

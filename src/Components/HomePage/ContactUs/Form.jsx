@@ -1,11 +1,8 @@
 import React from "react";
 import CommanButton from "../../Comman/CommanButton";
-import { FaLocationArrow } from "react-icons/fa6";
 import Input from "../../Comman/Input";
 import * as Yup from "yup";
 import { useFormik } from "formik";
-import { UNSAFE_withComponentProps } from "react-router-dom";
-
 const Form = () => {
   const validatationSchema = Yup.object().shape({
     userName: Yup.string()
@@ -13,7 +10,6 @@ const Form = () => {
       .min(5, "min 5 letters")
       .max(12, "max 10 letters"),
     userNumber: Yup.string()
-      // .min(11, "number should be 11 digits")
       .required("Number is required")
       .max(11, "number should be 11 digits"),
     userEmail: Yup.string()
@@ -31,7 +27,7 @@ const Form = () => {
     },
     validationSchema: validatationSchema,
     onSubmit: (value) => {
-      console.log(value.userNumber);
+      // console.log(value.userNumber);
       const user = {
         name: value.userName,
         number: value.userNumber,
@@ -42,6 +38,7 @@ const Form = () => {
       console.log("🚀 ~ Form ~ user:", user);
     },
   });
+
   return (
     <div className="bg-white text-black placeholder:text-black   tablet:w-[60%] s_phone:w-full  p-8 rounded-2xl s_phone:px-5  m_phone:px-10">
       <h1 className="my-7 font-bold text-[#1B1C67]  s_phone:text-xl  laptop:text-4xl ">
@@ -97,17 +94,13 @@ const Form = () => {
             {formik.errors.userDescription}
           </p>
         )}
-        <span
-          className="flex items-center text-base  gap-2  justify-center text-white rounded-lg 
-          s_phone:h-10 s_phone:text-xs bg-[#1B1C67]  laptop:text-base   laptop:h-15  laptop:w-55"
-        >
-          <FaLocationArrow />
-          <CommanButton
-            type="submit"
-            text={"Send message"}
-            className={"border-none"}
-          />
-        </span>
+        <CommanButton
+          arrow={true}
+          disabled={!formik.dirty || !formik.isValid}
+          type="submit"
+          text={"Send message"}
+          className={`border-none laptop:px-12!  laptop:py-5! s_phone:px-16 s_phone:py-3 s_phone:m-auto  tablet:m-0 ${!formik.dirty || !formik.isValid ? " opacity-90" : ""} `}
+        />
       </form>
     </div>
   );

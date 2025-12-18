@@ -4,73 +4,90 @@ import { RiArrowDropUpLine } from "react-icons/ri";
 // navbar section data
 export const links = [
   {
+    id: 1,
     title: "home",
     ref: "#home",
   },
   {
+    id: 2,
     title: "Services",
     ref: "#service",
     dropdown: <RiArrowDropDownLine />,
     dropup: <RiArrowDropUpLine />,
     items: [
       {
+        id: 1,
         item: "link1",
       },
       {
+        id: 2,
         item: "link2",
       },
       {
+        id: 3,
         item: "link3",
       },
     ],
   },
   {
+    id: 3,
     title: "Government",
     ref: "#contactus",
     dropdown: <RiArrowDropDownLine />,
     dropup: <RiArrowDropUpLine />,
     items: [
       {
+        id: 1,
         item: "link1",
       },
       {
+        id: 2,
         item: "link2",
       },
       {
+        id: 3,
         item: "link3",
       },
     ],
   },
   {
+    id: 4,
     title: "Case Studies",
     ref: "#advancesolution",
     dropdown: <RiArrowDropDownLine />,
     dropup: <RiArrowDropUpLine />,
     items: [
       {
+        id: 1,
         item: "link1",
       },
       {
+        id: 2,
         item: "link2",
       },
       {
+        id: 3,
         item: "link3",
       },
     ],
   },
   {
+    id: 5,
     title: "About A360",
     ref: "#about",
     dropdown: <RiArrowDropDownLine />,
     dropup: <RiArrowDropUpLine />,
     items: [
       {
+        id: 1,
         item: "link1",
       },
       {
+        id: 2,
         item: "link2",
       },
       {
+        id: 3,
         item: "link3",
       },
     ],

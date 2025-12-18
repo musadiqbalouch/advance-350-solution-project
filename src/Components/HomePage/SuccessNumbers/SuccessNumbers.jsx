@@ -1,13 +1,13 @@
 import React from "react";
 import image from "../../../assets/SuccessSectionlogo1.png";
-import { SuccessRate } from "../../Constants/dataa";
+import { SuccessRate } from "../../Constants/data";
 
 const SuccessNumbers = () => {
   // laptop - sm;
   return (
     <div
-      className="w-full   flex  items-center justify-center text-[#FFFFFF] container m-auto p-10  laptop-lg:p-5 laptop-lg:p5 desktop:m-auto 
-    desktop:mt-10 laptop-lg:px-10  "
+      className="w-full   flex  items-center justify-center text-[#FFFFFF] container m-auto  s_phone:p-3  laptop-lg:px-10 laptop-lg:p5 desktop:m-auto 
+    desktop:mt-10 laptop-lg:px10  "
     >
       <div
         className="tablet:rounded-4xl  bg-linear-[360deg] from-[#1B1C67]  to-[#0096E8] to-[188.17%] flex  flex-col 

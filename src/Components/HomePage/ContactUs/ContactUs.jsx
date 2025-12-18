@@ -1,16 +1,22 @@
 import React from "react";
 // import { Informations } from "../../Constants/Data";
-import { Informations } from "../../Constants/dataa";
+import { Informations } from "../../Constants/data";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import Form from "./Form";
+import { useLocation } from "react-router-dom";
 
 const ContactUs = () => {
+  const location = useLocation();
   return (
     <div
       id="contactus"
-      className=" flex items-center justify-center s_phone:p-4 tablet:px-10    w-full  "
+      className={`${
+        location.pathname === "/Contact"
+          ? "flex items-center justify-center s_phone:p-4 s_phone:mt-15  tablet:px-10  tablet:mt-17 laptop:mt-20    w-full"
+          : "flex items-center justify-center s_phone:p-4 tablet:px-10  laptop-lg:px-20   w-full"
+      } `}
     >
       <div
         className="bg-linear-[360deg]  flex  items-center justify-center rounded-2xl  container m-auto  from-[#1B1C67] 
