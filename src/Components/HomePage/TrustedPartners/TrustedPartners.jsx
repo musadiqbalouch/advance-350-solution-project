@@ -4,7 +4,7 @@ import { TrustedPartnersLogo } from "../../Constants/data";
 const TrustedPartners = () => {
   return (
     <div className="flex flex-col items-center justify-center p-20 gap-10  s_phone:p-2 tablet:py-10 ">
-      <h2 className="text-4xl font-bold text-[#1B1C67]  s_phone:text-base tablet:text-xl  laptop:text-3xl  ">
+      <h2 className="text-4xl font-bold text-dark-blue  s_phone:text-base tablet:text-xl  laptop:text-3xl  ">
         Our Trusted Partners
       </h2>
       <div className="flex items-center gap- s_phone:gap-5  tablet:gap-13 laptop:gap-17 laptop-lg:gap-20 ">

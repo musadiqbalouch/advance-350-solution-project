@@ -18,7 +18,7 @@ const AboutCompany = () => {
         />
       </div>
       <div className="w150 flex items-start flex-col gap-2 ">
-        <h2 className="flex text-[#1B1C67]  items-center gap-2  s_phone:text-xs laptop:text-lg">
+        <h2 className="flex text-dark-blue  items-center gap-2  s_phone:text-xs laptop:text-lg">
           <FaGripLines className="text-2xl" /> About Our Company
         </h2>
         <h1 className="font-bold  s_phone:text-lg laptop:text-2xl laptop-lg:text-4xl ">
@@ -37,7 +37,7 @@ const AboutCompany = () => {
             key={index}
             className="flex s_phone:w-70     items-start gap-2 my-2 phone:w-90 tablet:my-0  "
           >
-            <h3 className=" text-xl text-[#1B1C67]">{about.checked}</h3>
+            <h3 className=" text-xl text-dark-blue">{about.checked}</h3>
             <p className=" ws90 text-xs   laptop:text-sm ">
               {about.description}
             </p>

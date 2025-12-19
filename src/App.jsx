@@ -1,6 +1,4 @@
-import { Route, Routes } from "react-router-dom";
-// import Pages from "./Pages/Pages";
-// import OurService from "./Components/HomePage/OurService/OurService";
+import { Navigate, Route, Routes } from "react-router-dom";
 import ContactUs from "./Components/HomePage/ContactUs/ContactUs";
 import Navbar from "./Components/HomePage/Navbar/Navbar";
 import Footer from "./Components/HomePage/Footer/Footer";
@@ -12,7 +10,8 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomPage />} />
-        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/Contact" element={<ContactUs />} />
+        <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
       <Footer />
     </div>

@@ -18,7 +18,7 @@ const CommanButton = ({
         onClick={onClick}
         type={type}
         disabled={disabled}
-        className={`${className}bg-[#1B1C67] text-white px-5 flex items-center justify-center gap-2 py-2 font-bold rounded-md border tablet:text-xs laptop:text-sm s_phone:py-1 s_phone:text-xs s_phone:px-4 cursor-pointer`}
+        className={`${className} bg-dark-blue  text-white px-5 flex items-center justify-center gap-2 py-2 font-bold rounded-md border tablet:text-xs laptop:text-sm s_phone:py-1 s_phone:text-xs s_phone:px-4 cursor-pointer`}
       >
         {arrow ? <FaLocationArrow className={`text-white `} /> : ""}
         {text}

@@ -27,6 +27,8 @@ body {
   --breakpoint-laptop-lg: 1366px;
   --breakpoint-desktop: 1439px;
   --breakpoint-_4k: 1920px;
+  --color-dark-blue: #1b1c67 /* -blue: #1b1c67; */;
+  --color-light-blue: #0096e8;
 }
 /* webkit-scrollbar {
   display: none;

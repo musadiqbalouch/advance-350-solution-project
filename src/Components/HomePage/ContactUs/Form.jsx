@@ -41,7 +41,7 @@ const Form = () => {
 
   return (
     <div className="bg-white text-black placeholder:text-black   tablet:w-[60%] s_phone:w-full  p-8 rounded-2xl s_phone:px-5  m_phone:px-10">
-      <h1 className="my-7 font-bold text-[#1B1C67]  s_phone:text-xl  laptop:text-4xl ">
+      <h1 className="my-7 font-bold text-dark-blue  s_phone:text-xl  laptop:text-4xl ">
         Contact Us{" "}
       </h1>
       <form

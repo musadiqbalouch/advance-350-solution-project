@@ -10,9 +10,9 @@ const AdvanceSolution = () => {
        tablet:px-10  laptop-sm:px-4 laptop:px-15 laptop-lg:px-0  tablet:flex-row container m-auto "
     >
       <div className=" tablet:w-[40%] ">
-        <p className=" font-bold text-[#0096E8]  s_phone:text-xl  laptop-sm:text-2xl laptop:text-3xl   laptop-lg:text-4xl">
+        <p className=" font-bold text-light-blue  s_phone:text-xl  laptop-sm:text-2xl laptop:text-3xl   laptop-lg:text-4xl">
           Advanced solutions for advanced problems.{" "}
-          <span className="text-[#1B1C67]">
+          <span className="text-dark-blue">
             Schedule a free consultation with Advanced360 Solutions today.
           </span>
         </p>

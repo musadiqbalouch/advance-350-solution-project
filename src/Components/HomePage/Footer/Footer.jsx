@@ -29,7 +29,7 @@ const Footer = () => {
             className="s_phone:h-10  laptop:h-15"
             alt=""
           />
-          <p className="text-[#1B1C67] py-5 font-normal">
+          <p className="text-dark-blue py-5 font-normal">
             Sign up for the Advance 360 Solutions newsletter for updates:
           </p>
           <Input
@@ -58,7 +58,7 @@ const Footer = () => {
                 key={index}
                 className=" flex flex-col  s_phone:gap-1   tablet:w-100 tablet:gap-3   "
               >
-                <h2 className="text-[#1B1C67] tablet:text-base laptop:text-lg">
+                <h2 className="text-dark-blue tablet:text-base laptop:text-lg">
                   {footer.title}
                 </h2>
                 {footer.array.map((txt, index) => (
@@ -75,8 +75,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-full text-center bg-amber-300">
-        <p className="text-white text-base bg-[#1B1C67] py-3  s_phone:text-sm">
+      <div className="w-full text-center ">
+        <p className="text-white text-base bg-dark-blue py-3  s_phone:text-sm">
           Ⓒ All Rights Reserved 2024{" "}
           <span className="font-semibold">-Advance 360 Solutions</span>. Powered
           by

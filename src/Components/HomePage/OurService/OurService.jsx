@@ -8,10 +8,12 @@ import ServicesInformation from "./ServicesInformation";
 const OurService = () => {
   const [showModal, setShowModal] = useState(false);
   const [title, setTitle] = useState("");
+  const [description, setDesription] = useState("");
 
   const handleModal = (item, index) => {
     // console.log(service[index]);
     setTitle(item.title);
+    setDesription(item.description);
     // console.log(index);
     setShowModal(true);
   };
@@ -26,14 +28,14 @@ const OurService = () => {
       }}
     >
       <div className="flex flex-col items-center">
-        <h2 className="text-4xl font-bold text-[#0096E8] my-2 s_phone:text-xl laptop-sm:text-2xl laptop-lg:text-4xl ">
+        <h2 className="text-4xl font-bold  text-light-blue my-2 s_phone:text-xl laptop-sm:text-2xl laptop-lg:text-4xl ">
           Our Services
         </h2>
         <p className="font-medium  s_phone:text-sm s_phone:text-center laptop-sm:text-lg  laptop-sm:px-6   laptop:text-sm laptop:w-205  laptop-lg:w-230 laptop-lg:text-base  ">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
+          blanditiis quasi commodi beatae repudiandae ut quis neque eligendi
+          est, possimus magnam, odit eius, illum perspiciatis atque. Suscipit
+          cumque dolores quia.
         </p>
       </div>
       <div className="flex container m-auto  gap-3  items-center  justifycenter text-center rounded-3xl py-4 mt-5 overflow-auto w-full   ">
@@ -56,7 +58,11 @@ const OurService = () => {
       </div>
       {showModal && (
         <Modal>
-          <ServicesInformation setShowModal={setShowModal} title={title} />
+          <ServicesInformation
+            setShowModal={setShowModal}
+            title={title}
+            description={description}
+          />
         </Modal>
       )}
     </div>

@@ -154,32 +154,46 @@ export const ServiceCard = [
   {
     image: DIGITALTRANSFORMATION,
     title: "DIGITAL TRANSFORMATION",
-    btn: <CommanButton text={"Read More"} className={"bg-[#0096E8] px-10!"} />,
+    btn: <CommanButton text={"Read More"} className={"bg-light-blue px-10!"} />,
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type andscrambled it to make a type specimen book",
   },
   {
     image: STRATEGICPLANNING,
     title: "STRATEGIC PLANNING",
-    btn: <CommanButton text={"Read More"} className={"bg-[#0096E8] px-10!"} />,
+    btn: (
+      <CommanButton text={"Read More"} className={" bg-light-blue px-10!"} />
+    ),
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptates optio id harum nobis commodi voluptatum dolorum, cum dolores. Delectus molestiae porro, soluta quibusdam ullam excepturi sed doloribus debitis atque!",
   },
   {
     image: TECHFINANCIALMODELING,
     title: "TECH FINANCIAL MODELING",
-    btn: <CommanButton text={"Read More"} className={"bg-[#0096E8] px-10!"} />,
+    btn: <CommanButton text={"Read More"} className={"bg-light-blue px-10!"} />,
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quas at! Repellat, recusandae nulla veniam architecto similique a amet, alias deleniti mollitia magnam cumque nam, unde quibusdam quisquam sed. Minus!",
   },
   {
     image: VENDORMANAGEMENT,
     title: "VENDOR MANAGEMENT",
-    btn: <CommanButton text={"Read More"} className={"bg-[#0096E8] px-10!"} />,
+    btn: <CommanButton text={"Read More"} className={"bg-light-blue px-10!"} />,
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam similique, maiores rem, provident ut id qui excepturi optio consectetur ea accusantium voluptatibus quam! Quas nemo sapiente similique recusandae vitae! Id!",
   },
   {
     image: TRANSFORMATIONACCELERATOR,
     title: "TRANSFORMATION ACCELERATOR",
-    btn: <CommanButton text={"Read More"} className={"bg-[#0096E8] px-10!"} />,
+    btn: <CommanButton text={"Read More"} className={"bg-light-blue px-10!"} />,
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias amet optio, ipsa culpa corporis earum molestias delectus facilis voluptatem vel odit saepe quae nisi asperiores nesciunt expedita accusantium quis. Nulla.",
   },
   {
     image: TRANSFORMATIONACCELERATOR,
     title: "GOVERMENT SERVICES",
-    btn: <CommanButton text={"Read More"} className={"bg-[#0096E8] px-10!"} />,
+    btn: <CommanButton text={"Read More"} className={"bg-light-blue px-10!"} />,
+    descriptiom:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas blanditiis quasi commodi beatae repudiandae ut quis neque eligendi est, possimus magnam, odit eius, illum perspiciatis atque. Suscipit cumque dolores quia.",
   },
 ];
 
@@ -205,7 +219,6 @@ export const TrustedPartnersLogo = [
 ];
 
 // contactusData email address and number
-// import { TiMail } from "react-icons/ti";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosMailUnread } from "react-icons/io";
@@ -270,19 +283,17 @@ export const foorterContent1 = [
     title: "Get in Touch",
     array: [
       {
-        logo: <MdLocationOn className="text-3xl mb-4 text-[#1B1C67]" />,
+        logo: <MdLocationOn className="text-3xl mb-4 text-dark-blue " />,
         text: "46164 Westlake Dr. #650422 Sterling, VA 20165-9998",
       },
       {
-        logo: <IoMail className="text-xl text-[#1B1C67]" />,
+        logo: <IoMail className="text-xl text-dark-blue" />,
         text: "info@a360s.com",
       },
       {
-        logo: <IoCall className="text-xl text-[#1B1C67]" />,
+        logo: <IoCall className="text-xl text-dark-blue" />,
         text: "+1 (703) 644-8000",
       },
     ],
   },
 ];
-
-// Routes for Navar

@@ -57,7 +57,7 @@ const Navbar = () => {
                 href={link.ref}
                 onClick={scroolBar}
                 key={index}
-                className="flex   text-sm  tablet:h-5   items-center justify-center  tablet:text-xs laptop:text-sm "
+                className="flex text-sm  tablet:h-5   items-center justify-center  tablet:text-xs laptop:text-sm "
               >
                 {link.title}
                 <span className="text-3xl ">
@@ -80,8 +80,13 @@ const Navbar = () => {
             </div>
           ))}
         </div>
-        <Link to={"/Contact"} className="s_phone:hidden tablet:block">
-          <CommanButton text={"Contact Us"} />
+
+        {/* <CommanButton text={"Contact Us"} /> */}
+        <Link to={"/Contact"}>
+          <CommanButton
+            className={"s_phone:hidden tablet:block"}
+            text={"Contact Us"}
+          />
         </Link>
       </nav>
       {/* navbar when screen size is on smaller then table  */}
@@ -130,14 +135,7 @@ const Navbar = () => {
                 )}
               </div>
             ))}
-
-            <Link
-              to={"/Contact"}
-              onClick={() => setMenuOpen(false)}
-              className=""
-            >
-              <CommanButton text={"Contact Us"} />
-            </Link>
+            <CommanButton className={""} text={"Contact Us"} />
           </div>
         )}
       </div>
